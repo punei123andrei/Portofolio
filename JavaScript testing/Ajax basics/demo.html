@@ -1,0 +1,45 @@
+var url = "http://website.com/posts";
+$.post(url, data, callback)
+
+$.submit()
+
+$.ajax(url, settings)
+
+
+
+
+
+$('document').ready(function(){
+
+ $('button').click(function(){
+ 
+ $('button').removeClass('selected');
+   $(this).addClass('selected');
+   var animal = $(this).text();
+   var flickrAPI = 'https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?';
+   var flickrOptions = {
+   tags: animal,
+     format: "json"
+   };
+   
+   function displayPhotos(data) {
+   var photoHtml = '<ul>';
+     $.each(data.items , function (i, photo){
+       
+       photoHtml += '<li class="grid25 tablet-grid-50">';
+       photoHtml += '<a href="' + photo.link +  '" class="image">';
+       photoHtml += '<img src="' + photo.media.m + '"></a></li>'
+       
+     });
+     
+     photoHtml += '</ul>';
+     $('#photos').html(photoHtml);
+   }
+ $.getJSON(flickrAPI, flickrOptions, displayPhotos);
+ 
+ });// click function
+
+
+
+
+}); // end ready function

@@ -1,0 +1,56 @@
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	/*display: inline-flex;*/
+
+	display: flex;
+
+	/*flex-direction: row-reverse;*/
+	/*flex-direction: column-reverse;*/
+	/*flex-direction: column;*/
+
+	flex-wrap: wrap;
+
+	/*justify-content: flex-end;*/
+	/*justify-content: center;*/
+	/*justify-content: space-between;*/
+
+	justify-content: space-around;
+
+	/*height: 280px;*/
+}
+
+
+
+
+/* ================================= 
+  Flexbox Grow
+==================================== */
+
+.item {
+	flex-grow: 1;
+}
+
+.item-3 {
+	flex-grow: 4;
+}
+
+
+
+/* ================================= 
+  Flexbox Order
+==================================== */
+
+
+/*.item-2 {
+	margin-right: auto;
+}
+.item-5 {
+	order: 2;
+}
+.item-2 {
+	order: 1;
+}*/
+

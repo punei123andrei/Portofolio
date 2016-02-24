@@ -1,0 +1,206 @@
+/* :nth-child Pseudo-classes------------------ */
+/*div:nth-of-type(3n+1){
+  background: #52BAB3;
+  color: white;
+}*/
+
+/*div:nth-last-of-type(3){
+  background: #52BAB3;
+  color: white;
+}*/
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+  color: #384047;
+  padding: 40px 0;
+}
+p {
+  font-family: sans-serif;
+  margin-bottom: 24px;
+}
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px dotted rgba(0, 0, 0, 0.2);
+  margin: 50px 0;
+}
+h1,
+h2 {
+  margin: 0 0 30px 0;
+}
+nav a {
+  font-size: .9em;
+  background: #ff784f;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+nav a:hover {
+  opacity: .75;
+}
+
+/* Main -------------------- */
+
+#container {
+  max-width: 1100px;
+  margin: auto;
+}
+.row {
+  padding-top: 40px;
+}
+.col {
+  float: left;
+  width: 32.421%;
+  padding: 15px;
+}
+
+.btn {
+  font-size: 0.875em;
+  font-weight: 400;
+  cursor: pointer; 
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  margin: 1em 0;
+  text-transform: uppercase;
+  border-bottom: 3px solid rgba(0,0,0,0.05);
+    background-color: #52bab3; 
+}
+.btn:hover { 
+  opacity: .75; 
+}
+
+/* Form -------------------- */
+
+label {
+  display: block;
+  margin-bottom: 0.5em; 
+}
+input {
+  outline: 0;
+  border: none;
+  padding: 15px;
+  border-radius: .3em;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-size: 1em;
+  color: #222;
+  font-weight: 300; 
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.2em;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Pseudo classes ------------------ */
+
+:root{background-color: lightblue;}
+
+:target {
+  background: #384047;
+  color:white;
+}
+
+#col-c:target{
+  background: #eff1f2;
+  color: initial;
+  box-shadow: 0 0 6px rgba(0,0,0, .2)
+}
+
+
+input:not([type="submit"]){
+  box-shadow: inset  0 2px 0 rgba(0,0,0, .15);
+}
+
+
+.col:not(:first-child),
+nav a:not(:first-child){
+  margin-left: 15px;
+}
+
+/* Last div styling---------------*/
+
+
+div[class="gallery"]{
+  width: 52%;
+  margin: auto;
+}
+
+
+p {
+  margin-bottom: 24px;
+  font-weight: 200;
+}
+ul {
+  font-size: 1.25rem;
+  list-style: none;
+  margin-top: 36px;
+  padding: 0;
+}
+li {
+  margin-bottom: 16px;
+}
+a {
+  color: #4183c4;
+}
+
+.intro::first-line{
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.intro::first-letter{
+   float:left;
+   font-size: 80px;
+   color: white;
+   padding: 5px 10px;
+   background: #384047;
+   margin: 10px 10px 0 0;
+   border-radius: 5px;
+   line-height: 1;
+}
+
+
+.jpg::before {
+  content: "JPG - ";
+  font-size: .75em;
+}
+
+.zip::after {
+  content: " - ZIP ";
+}
+
+h1::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: coral;
+  margin: 0 10px;
+}
+
+.d-loads a::after{
+  content: attr(title);
+  display: inline-block;
+  color: initial;
+  font-size: .65em;
+  margin-left: 5px;
+}

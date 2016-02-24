@@ -1,0 +1,121 @@
+/* ----- Sign-up form styles
+================================---- */
+
+
+form button {
+
+
+
+
+
+/*-----------Text style----------*/
+
+
+	font-family: 'Bitter', sans-serif;
+	color: white;
+	letter-spacing: 0.05rem;
+	font-weight: 800;
+
+    
+
+	background-color: #28568a;
+	border: none;
+
+	padding: 10px 20px;
+	margin-bottom: 20px;
+
+
+
+
+}
+
+
+input {
+	border-radius: 5px;
+}
+
+
+
+
+
+#sign-up,
+legend {
+	margin-bottom: 49px;
+}
+
+/*-----------Content Cube----------*/
+
+
+.club-float {
+	float: right;
+	max-width: 1200px;
+	
+}
+
+.clear img {
+	margin-right: 20px;
+}
+
+.rubrica {
+	margin: 30px;
+	padding: 10px;
+
+
+	border-radius: 10px;
+
+	background: linear-gradient( 90deg, #b6b6b6, #c3c3c3 , transparent 10% ),
+              linear-gradient( 90deg , #fff, transparent),
+           no-repeat center ;
+   
+	
+           -webkit-transition-timing-function: ease-in background;
+}
+
+.club-link {
+	color: white;
+}
+
+.rubrica:hover {
+	
+
+
+	background: linear-gradient( 90deg, 	#b0b0b0, #b0b0b0, transparent 30% );
+	-webkit-transition: background 5s transparent;
+}
+
+
+
+
+
+
+/*-----------Display style----------*/
+
+form {
+
+    text-align: center;
+
+
+	position: absolute;
+	left: 117px;
+	top: 157px;
+    
+
+    padding: 12px 20px;
+	background: linear-gradient( to top, #17314f, #234a76 ),
+              linear-gradient( 90deg , #fff, transparent),
+           no-repeat center;;
+	border-radius: 30px;
+
+
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+} 
+
+legend,
+input {
+	display: block;
+	z-index: 100;
+}
+
+input {
+	margin-bottom: 31px;
+}

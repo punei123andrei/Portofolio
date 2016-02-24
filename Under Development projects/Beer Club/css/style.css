@@ -1,0 +1,333 @@
+
+/* ----- Imported styles
+================================---- */
+@import url('Sign-up.css');
+@import url('gallery.css');
+
+
+/* ----- Font faces
+================================---- */
+
+
+
+@font-face {
+	font-family: Chalk;
+	src: url(../font/EraserDust.ttf);
+
+}
+
+
+
+
+/* ----- General Styles
+================================---- */
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	color: white;
+	margin: 0;
+
+/*	font-family : Verdana, sans-serif;*/
+    line-height: 0.6;
+ 	
+}
+
+html,
+body,
+.main-wraper,
+.col {
+	height: 100%;
+}
+
+
+
+h3 {
+	font-size: 1.3em;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+/* ----- Head Styles
+================================---- */
+
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+
+
+
+
+	background: linear-gradient( #17314f, #234a76 ),
+              linear-gradient( 90deg , #fff, transparent),
+           no-repeat center;
+	padding: 7px 56px;
+
+  
+/*-----------Fixed header----------*/
+
+    /*width: 100%;
+
+	position: fixed;
+	z-index: 100;*/
+
+
+}
+
+
+
+
+
+header nav ul li {
+	font: 700 1.5em	/1 'Hind Vadodara', sans-serif;
+	letter-spacing: 0.02em;
+    
+    margin-right: -5px;
+
+	display: inline-block;
+	padding: 1em 1em;
+
+
+	text-shadow: 4px 10px 13px rgba(0,0,0, .8);
+
+}
+
+
+
+/*-----------Link style----------*/
+
+
+header a:link {
+    	text-decoration: none;
+    	color: #fff;
+}
+
+header a:visited {
+	color: #fff;
+}
+
+/*header a:hover {
+	
+}*/
+
+header nav ul li:active {
+	text-shadow: 2px 5px 13px rgba(0,0,0, .8);
+	position: relative;
+	bottom: -3px;
+	right: -3px;
+}
+
+
+
+
+/* ----- Banner style
+================================---- */
+
+.banner{
+      width: 100%;
+      height: 400px;
+      background: url('../img/banner.jpg') no-repeat center / cover;
+      background-position: 30% 2%;
+      
+      box-shadow: 0px 7px 48px 10px rgba(0,0,0, .8);
+      box-sizing: border-box;
+      line-height: 0.6px;
+
+         
+     
+}
+
+/*-----------Join Us divs----------*/
+
+
+
+
+#join {
+
+	position: absolute;
+	left: 85%;
+	top: 160px;
+    height: 1000px;
+	
+	font-family: 'Bitter', serif;
+	font-weight: 800;
+	font-size: 1.3rem;
+	letter-spacing: 0.8px;
+
+
+}
+
+#join a {
+	
+
+	text-decoration: none;
+	padding: 10px;
+	color: white;
+}
+
+
+/* ----- Content Style
+================================---- */
+
+
+
+.cube {
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	flex-direction: row;
+ 	flex: 1 200px;
+	justify-content: space-around;
+
+	min-height: 1000px;
+	align-items: stretch;
+    
+
+	/*align-items: flex-start / flex-end / center;*/
+	/*align-self: flex-start / flex end / center;*/
+
+	padding-top: 10px;
+
+
+
+	background: linear-gradient( #17314f, #234a76 ),
+              linear-gradient( 90deg , #fff, transparent),
+           no-repeat center ;
+}
+
+.column {
+    width: 25%;
+}
+
+
+
+
+
+/*-----------Logo style----------*/
+
+.item1 {
+	font-family: 'Lobster', cursive;
+	color: #fff;
+	font-weight: 400;
+	font-size: 3em;
+}
+
+.underline {
+	position: relative;
+	top: -43px;
+	left: -8px;
+
+	margin-bottom: -26px;
+
+
+	width: 202px;
+	height: 50px;
+
+}
+
+
+/*-----------Text Style----------*/
+
+
+.cube {
+	line-height: 1.4em;
+	padding-top: 20px;
+}
+
+.primary-content p {
+	font-family: Caveat, sans-serif;
+	font-weight: 700;
+	font-size:  1.3rem;
+}
+
+.secondary-content {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 700;
+	line-height: 20px;
+	
+}
+
+.third-content {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 700;
+	line-height: 20px;
+}
+
+
+#first-h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+
+}
+
+/*-----------Floats primary-column----------*/
+
+
+.float {
+	float: left;
+
+	width: 106px;
+	height: auto;
+	padding-right: 16px;
+	margin-top: 20px;
+}
+
+.quote {
+	clear: both;
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px ;
+}
+
+
+
+/*-----------Resize image----------*/
+
+.beer {
+	padding: 20px auto;
+	min-width: 20px;
+	width: 100%;
+	height: auto;
+}
+
+
+
+/* ----- Footer style
+================================---- */
+
+
+.main-footer {
+	display: flex;
+
+
+	justify-content: center;
+	height: 130px;
+	background: linear-gradient(to top, #17314f, #234a76 );
+
+	box-shadow: 0px 7px 48px 10px rgba(0,0,0, .8);
+}
+
+/*.logo {
+	-webkit-filter: hue-rotate(180deg);
+}*/
+
+
+
+
+
+.clear{
+	clear: both;
+}
+
+
